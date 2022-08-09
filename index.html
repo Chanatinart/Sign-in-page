@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="picture">
+        <div class="logo">
+          <img src="image/odin-lined.png" alt="logo" />
+          <h1 class="odin">Odin</h1>
+        </div>
+      </div>
+
+      <div class="right-content">
+        <div class="description">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </p>
+          <p>Sign-up <em>now</em> to get started.</p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="information">
+          <h1 class="title">Let's do this!</h1>
+
+          <form action="#" id="form">
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" name="first-name" id="first-name" required />
+            </div>
+
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" name="last-name" id="last-name" required />
+            </div>
+
+            <div class="input">
+              <label for="email">E-mail </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="user@yourmail.com"
+              />
+            </div>
+
+            <div class="input">
+              <label for="tel">Phone number</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                required
+                max="10"
+                pattern="[0-9]{}10"
+                title="put only number 0-9"
+              />
+            </div>
+
+            <div class="input">
+              <label for="password">password</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+
+            <div class="input">
+              <label for="confirm">Confirm password</label>
+              <input type="password" name="confirm" id="confirm" />
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <button type="submit" form="form">Create Account</button>
+        </div>
+
+        <div class="log-in">
+          <p>Already have an account?</p>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
